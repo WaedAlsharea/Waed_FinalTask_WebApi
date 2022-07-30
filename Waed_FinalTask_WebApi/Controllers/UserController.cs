@@ -153,6 +153,22 @@ namespace Waed_FinalTask_WebApi.Controllers
             }
 
         }
+        [HttpPost("Login")]
+        public IActionResult Authentication([FromBody] UserApi login)
+        {
+            var RESULT = UserService.Authentication_jwt(login);
+
+            if (RESULT == null)
+            {
+                return Unauthorized();
+            }
+            else
+            {
+                return Ok(RESULT);
+            }
+
+
+        }
 
 
 

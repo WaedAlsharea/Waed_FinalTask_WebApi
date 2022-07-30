@@ -61,7 +61,7 @@ namespace learn.infra.Repository
             if (comments.Any(c=> c.commentId == id))
             {
                 var parameter = new DynamicParameters();
-\                parameter.Add("textOfCommentApi", comment.commenText, dbType: DbType.String, direction: ParameterDirection.Input);
+               parameter.Add("textOfCommentApi", comment.commenText, dbType: DbType.String, direction: ParameterDirection.Input);
 
                 var result = dbContext.dbConnection.ExecuteAsync("CommentApi_package.UpdateCommentApi", parameter, commandType: CommandType.StoredProcedure);
                 if (result != null)

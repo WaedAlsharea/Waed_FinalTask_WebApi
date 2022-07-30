@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "learn.infra", "learn.infra\learn.infra.csproj", "{A6EFE8B5-6367-4700-9F0B-AA417C211132}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{515170B7-CF25-4568-B70E-3003B123D63A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\Waed-Final-Task-Web-Api.pdf = ..\..\..\Desktop\Waed-Final-Task-Web-Api.pdf
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -17,6 +17,8 @@ namespace learn.core.Service
 
         public List<UserVisaCountDTO> VisaCount();
         public List<UsersCityCountDTO> CityCount();
+        public string Authentication_jwt(UserApi user);
+
 
     }
 }

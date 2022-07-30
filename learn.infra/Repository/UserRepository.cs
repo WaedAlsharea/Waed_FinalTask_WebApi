@@ -181,7 +181,18 @@ namespace learn.infra.Repository
 
         }
 
+        public UserApi Authentication_jwt(UserApi user)
+        {
+            var parameter = new DynamicParameters();
+        
 
+            IEnumerable<UserApi> users = dbContext.dbConnection.Query<UserApi>("UserApi_package.getallUserApi", commandType: CommandType.StoredProcedure);
 
+            var result = users.Where(u => u.userName == user.userName && u.userPass == user.userPass).SingleOrDefault();
+
+            return result;
+        }
+
+      
     }
 }

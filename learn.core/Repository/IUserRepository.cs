@@ -16,6 +16,8 @@ namespace learn.core.Reopsitory
         public List<UserMsgsDTO> MsgsCount();
         public List<UserVisaCountDTO> VisaCount();
         public List<UsersCityCountDTO> CityCount();
+        public UserApi Authentication_jwt(UserApi user);
+
 
 
     }
